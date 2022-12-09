@@ -14,7 +14,7 @@ int main(void)
 
 	for (count = 97; count < 123; count++)
 	{
-		if (count != 101 && count != 133)
+		if (count != 101 && count != 113)
 		{
 			putchar(count);
 		}
