@@ -8,7 +8,7 @@
  * Return: return 0 (successful)
  */
 
-void print_alphabet(void);
+void print_alphabet(void)
 {
 	int count;
 
