@@ -14,10 +14,7 @@ void print_alphabet(void)
 
 	for (count = 97; count < 123; count++)
 	{
-		if (count != 101 && count != 113)
-		{
-			putchar(count);
-		}
+		putchar(count);
 	}
 
 	putchar('\n');
