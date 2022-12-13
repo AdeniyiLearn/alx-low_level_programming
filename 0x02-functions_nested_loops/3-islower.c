@@ -1,4 +1,4 @@
-#include <stdio.
+#include <stdio.h>
 
 /**
  * _islower - function checks if it is lower alphabet
