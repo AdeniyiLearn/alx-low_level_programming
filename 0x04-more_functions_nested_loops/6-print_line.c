@@ -2,6 +2,7 @@
 #include "main.h"
 /**
  * print_line - function prints ___ nth times
+ * @n: integer parameter
  *
  * Return: Void
  */
