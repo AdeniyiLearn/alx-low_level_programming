@@ -1,4 +1,4 @@
-ginclude <stdio.h>
+#include <stdio.h>
 #include "main.h"
 /**
  * _isupper - function checks if it is an uppercase alphabet
