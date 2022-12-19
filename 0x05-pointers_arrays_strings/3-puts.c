@@ -14,5 +14,4 @@ void _puts(char *str)
 		try = *str;
 		_putchar(try);
 	} while (*str++);
-	_putchar('\n');
 }
