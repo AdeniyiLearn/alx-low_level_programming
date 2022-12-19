@@ -11,8 +11,11 @@ void _puts(char *str)
 	char try;
 
 	do {
-		try = *str;
-		_putchar(try);
-	} while (*str++ && *str != '\0');
+		if (*str != '\0')
+		{
+			try = *str;
+			_putchar(try);
+		}
+	} while (*str++);
 	_putchar('\n');
 }
