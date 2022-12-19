@@ -13,5 +13,6 @@ void _puts(char *str)
 	do {
 		try = *str;
 		_putchar(try);
-	} while (*str++);
+	} while (*str++ && *str != '\0');
+	_putchar('\n');
 }
