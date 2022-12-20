@@ -10,10 +10,15 @@
 void print_rev(char *s)
 {
 	int count;
+	char try;
 
-	for (count = _strlen(s); *(s + (count - 1)) >= 0; )
+	for (count = _strlen(s); count >= 0;)
 	{
-		_putchar(*(s + (count--)));
+		try = *(s + (count--));
+		if (try != '\0')
+		{
+			_putchar(try);
+		}
 	}
 	_putchar('\n');
 }
