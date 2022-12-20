@@ -1,11 +1,12 @@
 #include "main.h"
 /**
  * print_rev - function prints strings and prints a new line
- * _strlen - function to get string length
+ *
  * @s: pointer to strings of character
  *
  * Return: Void
  */
+
 
 void print_rev(char *s)
 {
@@ -23,6 +24,15 @@ void print_rev(char *s)
 	_putchar('\n');
 }
 
+
+/**
+ * _strlen - function returns length
+ *
+ * @s: pounter to character
+ *
+ * Return: result
+ *
+ */
 
 int _strlen(char *s)
 {
