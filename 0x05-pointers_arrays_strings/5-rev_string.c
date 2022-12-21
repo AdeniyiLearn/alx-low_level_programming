@@ -9,14 +9,15 @@
 
 void rev_string(char *s)
 {
-	int a, b, count = 0;
+	int a, b, c, count;
 	char *rev;
 
 
 	count = _strlen(s);
+	c = count - 1;
 	rev = (char*)malloc(sizeof(char)*count);
 
-	for (a = 0, b = count - 1; a < (count - 1),b >= 0; a++, b--)
+	for (a = 0, b = c; b >= 0 && a < c; a++, b--)
 	{
 		rev[a] = *(s + b);
 	}
