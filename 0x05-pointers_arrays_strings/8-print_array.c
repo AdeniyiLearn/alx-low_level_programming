@@ -20,7 +20,7 @@ void print_array(int *a, int n)
 
 		if (count <= sec)
 		{
-			printf(",\n");
+			printf("%d \n", count);
 			break;
 		}
 		else if (sec < count - 1)
