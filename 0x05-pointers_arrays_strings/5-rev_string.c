@@ -15,9 +15,9 @@ void rev_string(char *s)
 
 	count = _strlen(s);
 	c = count - 1;
-	rev = (char*)malloc(sizeof(char)*count);
+	rev = (char *)malloc(sizeof(char)*count);
 
-	for (a = 0, b = c; b >= 0 && a < c; a++, b--)
+	for (a = 0, b = c; b >= 0 || a < c; a++, b--)
 	{
 		rev[a] = *(s + b);
 	}
