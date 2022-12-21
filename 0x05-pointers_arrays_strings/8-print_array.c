@@ -17,7 +17,20 @@ void print_array(int *a, int n)
 	for (sec = 0; sec < count; sec++)
 	{
 		alt = *(a + sec);
-		if (sec < count - 1)
+
+		if (count <= sec)
+		{
+			if (count == 0)
+			{
+				printf("%d\n", alt);
+				break;
+			}
+			else
+			{
+				break;
+			}
+		}
+		else if (sec < count - 1)
 		{
 			printf("%d, ", alt);
 		}
