@@ -18,9 +18,9 @@ void print_array(int *a, int n)
 	{
 		alt = *(a + sec);
 
-		if (count <= sec)
+		if (sec >= count)
 		{
-			printf("%d \n", count);
+			printf("%d, \n", count);
 			break;
 		}
 		else if (sec < count - 1)
