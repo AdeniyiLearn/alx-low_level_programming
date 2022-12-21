@@ -21,7 +21,6 @@ void print_array(int *a, int n)
 		if (sec >= count)
 		{
 			printf("%d, \n", count);
-			break;
 		}
 		else if (sec < count - 1)
 		{
