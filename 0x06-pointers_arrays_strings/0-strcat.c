@@ -15,7 +15,7 @@ char *_strcat(char *dest, char *src)
 
 	dest_lent = _strlen(dest);
 	src_lent = _strlen(src);
-	begin = dest_lent - 1;
+	begin = dest_lent;
 
 	for (count = 0; count <= src_lent; count++)
 	{
