@@ -31,7 +31,7 @@ char *_strdup(char *str)
 		size++;
 	}
 
-	snd = malloc((size + 1) * sizeof(char));
+	snd = (int*)malloc((size + 1) * sizeof(char));
 
 	while (count <= size + 1)
 	{
