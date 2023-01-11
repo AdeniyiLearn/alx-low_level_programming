@@ -38,7 +38,6 @@ char *_strdup(char *str)
 		snd[count] = *(str + count);
 		count++;
 	}
+	snd[count] = '\0';
 	return (snd);
-
-	free(snd);
 }
