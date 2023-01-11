@@ -40,4 +40,5 @@ char *_strdup(char *str)
 	}
 	return (snd);
 
+	free(snd);
 }
