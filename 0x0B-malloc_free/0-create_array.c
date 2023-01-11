@@ -22,7 +22,7 @@ char *create_array(unsigned int size, char c)
 	{
 		return (NULL);
 	}
-	while (counter <= size + 1)
+	while (counter <= size)
 	{
 		snd[counter] = c;
 		counter++;
