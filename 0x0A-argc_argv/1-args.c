@@ -25,7 +25,7 @@ int main(int argc, char **argv)
 	{
 		c++;
 	}
-	printf("%d\n", c);
+	printf("%d\n", (c - 1));
 	}
 
 	exit(EXIT_SUCCESS);
