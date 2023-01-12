@@ -14,9 +14,9 @@ int main(int argc, char **argv)
 {
 	int c;
 
-	if (argc < 1)
+	if (argc <= 1)
 	{
-		printf("%s\n", "Error");
+		puts("Error");
 		return (1);
 	}
 
