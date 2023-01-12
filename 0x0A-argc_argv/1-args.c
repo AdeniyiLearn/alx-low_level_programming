@@ -17,12 +17,16 @@ int main(int argc, char **argv)
 	c = 0;
 	if (argc == 0)
 	{
-		exit(EXIT_FAILURE);
+		printf("%d\n", 0);
 	}
+	else
+	{
 	while (*argv++)
 	{
 		c++;
 	}
 	printf("%d\n", c);
+	}
+
 	exit(EXIT_SUCCESS);
 }
