@@ -1,32 +1,35 @@
 #include "function_pointers.h"
 
 /**
- * array_iterator - prints a name
+ * int_index - prints a name
  *
  * @array: pointer to integer array given
  *
  * @size:  size of the array
  *
- * @action: pointer to function
+ * @cmp: pointer to function
  *
  * Return: void
  */
 
-void array_iterator(int *array, size_t size, void (*action)(int))
+int int_index(int *array, int size, int (*cmp)(int))
 {
-	unsigned long int i;
+	int i;
 
-	if (size == '\0')
+	if (size <= 0)
 	{
-		exit(EXIT_FAILURE);
+		return (-1);
 	}
 
 	for (i = 0; i < size; i++)
 	{
-		if (*(array + i) == '\0')
+		if (cmp(*(array + i)) != 0)
 		{
-			exit(EXIT_FAILURE);
+			return (i);
 		}
-		action(*(array + i));
+		else
+		{
+			continue;
+		}
 	}
 }
