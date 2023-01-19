@@ -23,6 +23,10 @@ void array_iterator(int *array, size_t size, void (*action)(int))
 
 	for (i = 0; i < size; i++)
 	{
+		if (*(array + i) == '\0')
+		{
+			exit(EXIT_FAILURE);
+		}
 		action(*(array + i));
 	}
 }
