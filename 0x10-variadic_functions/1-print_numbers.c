@@ -24,7 +24,10 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	for (i = 0; i < n; i++)
 	{
 		j = va_arg(ap, const unsigned int);
-		printf("%d", j);
+		if (n != 0)
+		{
+			printf("%d", j);
+		}
 		if (i < (n - 1))
 		{
 			if (separator != NULL)
