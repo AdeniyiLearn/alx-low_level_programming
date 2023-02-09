@@ -14,7 +14,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	list_t *first_node, *last_node;
 	char *takestr;
 
-	if (str == NULL || *head != NULL)
+	if (str == NULL)
 	{
 		return (NULL);
 	}
