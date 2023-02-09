@@ -14,14 +14,14 @@ list_t *add_node_end(list_t **head, const char *str)
 	list_t *first_node, *last_node;
 	char *takestr;
 
-	len = strlen(str);
-	takestr = strdup(str);
-	first_node = malloc(sizeof(list_t));
-
-	if (takestr == NULL || len == '\0')
+	if (str == NULL)
 	{
 		return (NULL);
 	}
+
+	len = strlen(str);
+	takestr = strdup(str);
+	first_node = malloc(sizeof(list_t));
 
 	first_node->str = takestr;
 	first_node->len = len;
