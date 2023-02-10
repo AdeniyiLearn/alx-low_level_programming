@@ -20,6 +20,6 @@ void free_list(list_t *head)
 		free(head);
 		head = temp_node;
 	}
-	free(temp_node);
+	free(head);
 
 }
