@@ -8,17 +8,19 @@
 
 int main(void)
 {
-	int count, i, last;
+	int count, i;
 
-	last = 57;
 	i = 44;
 
-	for (count = 48; count < 57; count++)
+	for (count = 48; count <= 57; count++)
 	{
 		putchar(count);
-		putchar(i);
-		putchar(' ');
+		if (count < 57)
+		{
+			putchar(i);
+			putchar(' ');
+		}
 	}
-	putchar(last);
+	putchar('\n');
 	return (0);
 }
