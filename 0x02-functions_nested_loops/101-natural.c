@@ -19,7 +19,7 @@ int main(void)
 	{
 		if (incNum % 3 == 0 || incNum % 5 == 0)
 		{
-			con2+= incNum;
+			con2 += incNum;
 		}
 		incNum++;
 	}
