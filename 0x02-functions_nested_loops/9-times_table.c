@@ -20,7 +20,7 @@ void times_table(void)
 			result = inc2 * inc1;
 			if (inc2 >= 1)
 			{
-				printf("%4d,", result);
+				printf("%3d,", result);
 			}
 			else
 			{
@@ -28,7 +28,7 @@ void times_table(void)
 			}
 			inc2++;
 		}
-		printf("%4d\n", inc2 * inc1);
+		printf("%3d\n", inc2 * inc1);
 		inc2 = 0;
 		inc1++;
 	}
