@@ -13,7 +13,7 @@ int main(void)
 
 	incNum = 0;
 	nNum = 1024;
-	con2 = 0;
+	con1 = 0;
 
 	while (incNum <= nNum)
 	{
