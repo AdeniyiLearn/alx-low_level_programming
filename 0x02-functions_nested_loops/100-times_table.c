@@ -20,6 +20,13 @@ void print_times_table(int n)
 		{
 			break;
 		}
+		if (n == 0)
+		{
+			printf("%d\n", n);
+			break;
+		}
+		else
+		{
 		while (inc2 < count)
 		{
 			result = inc2 * inc1;
@@ -36,5 +43,6 @@ void print_times_table(int n)
 		printf("%4d\n", inc2 * inc1);
 		inc2 = 0;
 		inc1++;
+		}
 	}
 }
