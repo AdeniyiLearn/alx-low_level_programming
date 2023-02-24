@@ -9,7 +9,7 @@
 
 int main(void)
 {
-	long unsigned int count, term1, term2, fibn;
+	unsigned long int count, term1, term2, fibn;
 
 	term1 = 1;
 	term2 = 2;
