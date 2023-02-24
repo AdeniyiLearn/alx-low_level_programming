@@ -9,11 +9,10 @@
 
 int main(void)
 {
-	long unsigned int count, term1, term2, fibn, newterm1, newfibn;
+	unsigned int count, term1, term2, fibn, newterm1, newfibn;
 
 	term1 = 1;
 	term2 = 2;
-	printf("%ld, ", term2);
 
 	for (count = 2; count < 50; count++)
 	{
@@ -23,15 +22,17 @@ int main(void)
 
 		if (fibn % 2 == 0)
 		{
+			if (newfibn <= 4000000)
+			{
 			newterm1 = fibn;
 			newfibn += newterm1;
-			printf("%lu", newfibn);
-		}
-		if (fibn % 2 != 1 && count != 49)
-		{
-			printf(", ");
+			}
+			else
+			{
+				break;
+			}
 		}
 	}
-	putchar('\n');
+	printf("%d\n", newfibn);
 	return (0);
 }
