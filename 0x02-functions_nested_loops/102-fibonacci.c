@@ -9,18 +9,18 @@
 
 int main(void)
 {
-	long long unsigned int count, term1, term2, fibn;
+	long unsigned int count, term1, term2, fibn;
 
 	term1 = 1;
 	term2 = 2;
-	printf("%llu, %llu, ", term1, term2);
+	printf("%ld, %ld, ", term1, term2);
 
 	for (count = 2; count < 50; count++)
 	{
 		if (count < 49)
 		{
 			fibn = term1 + term2;
-			printf("%llu, ", fibn);
+			printf("%lu, ", fibn);
 			term1 = term2;
 			term2 = fibn;
 		}
