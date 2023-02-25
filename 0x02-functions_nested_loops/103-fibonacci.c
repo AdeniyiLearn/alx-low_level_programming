@@ -13,6 +13,7 @@ int main(void)
 
 	term1 = 1;
 	term2 = 2;
+	newfibn = 0;
 
 	for (count = 2; count < 50; count++)
 	{
@@ -33,6 +34,6 @@ int main(void)
 			}
 		}
 	}
-	printf("%d\n", newfibn);
+	printf("%d\n", newfibn + 2);
 	return (0);
 }
