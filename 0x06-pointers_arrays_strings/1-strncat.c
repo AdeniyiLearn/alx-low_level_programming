@@ -16,12 +16,18 @@ char *_strncat(char *dest, char *src, int n)
 
 	dest_lent = _strlen(dest);
 	begin = dest_lent;
-
+	if (n == '\0' || dest == NULL || *src == NULL)
+	{
+		return (1);
+	}
+	else
+	{
 	for (count = 0; count < n; count++)
 	{
 		*(dest + (begin) + count) = *(src + count);
 	}
 	return (dest);
+	}
 }
 
 
