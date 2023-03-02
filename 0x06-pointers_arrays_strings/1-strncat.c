@@ -18,7 +18,7 @@ char *_strncat(char *dest, char *src, int n)
 	begin = dest_lent;
 	if (*src == '\0')
 	{
-		exit (EXIT_FAILURE);
+		exit(EXIT_FAILURE);
 	}
 	else
 	{
