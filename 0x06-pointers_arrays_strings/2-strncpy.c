@@ -22,7 +22,6 @@ char *_strncpy(char *dest, char *src, int n)
 }
 
 
-
 /**
  * _strlen - function returns length
  *
