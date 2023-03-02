@@ -12,11 +12,26 @@
 
 char *_strncpy(char *dest, char *src, int n)
 {
-	int a;
+	int a, count;
+
 
 	for (a = 0; a <= n; a++)
 	{
+		if (_strlen(dest) >= _strlen(src))
+		{
 		*(dest + a) = *(src + a);
+		}
+		else if (_strlen(dest) < _strlen(src))
+		{
+			for (count = 0; count < n; count++)
+			{
+				*(dest + a) = *(src + a);
+			}
+		}
+		else
+		{
+			exit(1);
+		}
 	}
 	return (dest);
 }
