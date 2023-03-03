@@ -14,6 +14,10 @@ char *_strncpy(char *dest, char *src, int n)
 {
 	int count;
 
+	if (n < 0)
+	{
+		n = n * -1;
+	}
 	for (count = 0; count < n && *src != '\0'; count++)
 	{
 		*(dest + count) = *(src + count);
