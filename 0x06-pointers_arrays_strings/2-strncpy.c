@@ -18,6 +18,10 @@ char *_strncpy(char *dest, char *src, int n)
 	{
 		n = n * -1;
 	}
+	if (dest == NULL || src == NULL)
+	{
+		return (dest);
+	}
 	for (count = 0; count < n && *src != '\0'; count++)
 	{
 		*(dest + count) = *(src + count);
