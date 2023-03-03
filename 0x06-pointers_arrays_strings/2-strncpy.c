@@ -12,47 +12,11 @@
 
 char *_strncpy(char *dest, char *src, int n)
 {
-	int a, count;
+	int count;
 
-
-	for (a = 0; a <= n; a++)
+	for (count = 0; count < n; count++)
 	{
-		if (_strlen(dest) >= _strlen(src))
-		{
-		*(dest + a) = *(src + a);
-		}
-		else if (_strlen(dest) < _strlen(src))
-		{
-			for (count = 0; count < n; count++)
-			{
-				*(dest + a) = *(src + a);
-			}
-		}
-		else
-		{
-			exit(1);
-		}
+		*(dest + count) = *(src + count);
 	}
 	return (dest);
-}
-
-
-/**
- * _strlen - function returns length
- *
- * @s: pounter to character
- *
- * Return: result
- *
- */
-
-int _strlen(char *s)
-{
-	int count = 0;
-
-	while (*s++)
-	{
-		count++;
-	}
-	return (count);
 }
