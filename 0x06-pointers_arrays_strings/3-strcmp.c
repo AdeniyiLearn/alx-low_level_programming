@@ -6,12 +6,29 @@
  * @s2: pointer to strings of the character destination
  *
  *
- * Return: an interger 0 if successful
+ * Return: an interger 0 of difference of the parameter if successful
  */
 
 
-int _strcmp(char *s1, char *s2);
+int _strcmp(char *s1, char *s2)
 {
-	int dest_lent, count, begin;
+	int flag = 0, count;
+
+	for (count = 0; s1[count] != '\0' || s2[count] != '\0'; count++)
+	{
+		if (s1[count] != s2[count])
+		{
+			flag = 1;
+			break;
+		}
+	}
+	if (flag == 1)
+	{
+		return (*s1 - *s2);
+	}
+	else
+	{
+		return (0);
+	}
 }
 
