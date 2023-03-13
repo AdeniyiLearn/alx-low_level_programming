@@ -19,8 +19,9 @@ char *_strdup(char *str)
 	count = 0;
 	i = 0;
 	size = 0;
+	snd = (char *malloc(size + 1) * sizeof(char));
 
-	if (str == NULL)
+	if (str == NULL || snd == NULL)
 	{
 		return (NULL);
 	}
@@ -30,8 +31,6 @@ char *_strdup(char *str)
 		i++;
 		size++;
 	}
-
-	snd = (char *)malloc((size + 1) * sizeof(char));
 
 	while (count <= size + 1)
 	{
