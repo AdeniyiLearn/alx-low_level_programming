@@ -8,11 +8,10 @@
 char *str_concat(char *s1, char *s2)
 {
 	int i, j, count, count2, size, size2, size3;
-	char *snd;
-	char *dummy = "";
+	char *snd, *dummy;
 
-	count = 0, count2 = 0, i = 0, j = 0, size = 0, size2 = 0, size3 = 0;
-
+	dummy = "";
+	count = 0, count2 = 0, size = 0, size2 = 0, size3 = 0;
 	if (s1 == NULL)
 	{
 		s1 = dummy;
@@ -21,19 +20,10 @@ char *str_concat(char *s1, char *s2)
 	{
 		s2 = dummy;
 	}
-	while (*(s1 + i) != '\0')
-	{
-		i++;
-		size++;
-	}
-	while (*(s2 + j) != '\0')
-	{
-		j++;
-		size2++;
-	}
+	size = string_size(s1);
+	size2 = string_size(s2);
 	size3 = size + size2;
 	snd = malloc((size3 + 1) * sizeof(char));
-
 	if (snd == 0)
 	{
 		return (NULL);
