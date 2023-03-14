@@ -1,5 +1,23 @@
 #include "main.h"
 /**
+ * string_size - return lenght of string
+ * @s: pointer to charr
+ * Return: an int
+ */
+int string_size(char *s)
+{
+	int i, size;
+
+	i = 0;
+	size = 0;
+	while (*(s + i) != '\0')
+	{
+		i++;
+		size++;
+	}
+	return (size);
+}
+/**
  * str_concat - concatenates two strings
  * @s1: string parameter
  * @s2: 2nd string parameter
@@ -13,21 +31,15 @@ char *str_concat(char *s1, char *s2)
 	dummy = "";
 	count = 0, count2 = 0, size = 0, size2 = 0, size3 = 0;
 	if (s1 == NULL)
-	{
 		s1 = dummy;
-	}
 	if (s2 == NULL)
-	{
 		s2 = dummy;
-	}
 	size = string_size(s1);
 	size2 = string_size(s2);
 	size3 = size + size2;
 	snd = malloc((size3 + 1) * sizeof(char));
 	if (snd == 0)
-	{
 		return (NULL);
-	}
 	while (count < size)
 	{
 		snd[count] = *(s1 + count);
