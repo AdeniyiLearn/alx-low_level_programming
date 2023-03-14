@@ -7,7 +7,7 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-	int i, j, count, count2, size, size2, size3;
+	int count, count2, size, size2, size3;
 	char *snd, *dummy;
 
 	dummy = "";
