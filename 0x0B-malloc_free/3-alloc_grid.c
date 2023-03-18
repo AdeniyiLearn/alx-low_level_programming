@@ -11,14 +11,10 @@ int **alloc_grid(int width, int height)
 	int **p;
 
 	p = calloc(height, sizeof(int *));
-	if (width <= 0 || height <= 0)
+	if (width <= 0 || height <= 0 || p == NULL)
 	{
 		free(p);
 		return (NULL);
-	}
-	else if (p == NULL)
-	{
-		free(p);
 	}
 	else
 	{
