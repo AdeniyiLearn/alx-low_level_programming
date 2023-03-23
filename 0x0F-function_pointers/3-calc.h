@@ -1,5 +1,5 @@
-#ifndef MAIN_H
-#define MAIN_H
+#ifndef CALC_H
+#define CALC_H
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -11,6 +11,7 @@
  * @op: The operator
  * @f: The function associated
  */
+
 typedef struct op
 {
 	char *op;
@@ -24,4 +25,4 @@ int op_div(int a, int b);
 int op_mod(int a, int b);
 int (*get_op_func(char *s))(int, int);
 
-#endif /* MAIN_H */
+#endif
