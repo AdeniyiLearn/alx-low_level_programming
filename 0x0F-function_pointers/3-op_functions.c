@@ -9,11 +9,6 @@
 
 int op_add(int a, int b)
 {
-	if (a == NULL || b == NULL)
-	{
-		puts("Error");
-		exit(98);
-	}
 	return (a + b);
 }
 
@@ -27,11 +22,6 @@ int op_add(int a, int b)
 
 int op_sub(int a, int b)
 {
-	if (a == NULL || b == NULL)
-	{
-		puts("Error");
-		exit(98);
-	}
 	return (a - b);
 }
 
@@ -45,11 +35,6 @@ int op_sub(int a, int b)
 
 int op_mul(int a, int b)
 {
-	if (a == NULL || b == NULL)
-	{
-		puts("Error");
-		exit(98);
-	}
 	return (a * b);
 }
 
@@ -61,16 +46,6 @@ int op_mul(int a, int b)
  */
 int op_div(int a, int b)
 {
-	if (a == NULL || b == NULL)
-	{
-		puts("Error");
-		exit(98);
-	}
-	if (a == 0 || b == 0)
-	{
-		puts("Error");
-		exit(100);
-	}
 	return (a / b);
 }
 
@@ -83,15 +58,5 @@ int op_div(int a, int b)
 
 int op_mod(int a, int b)
 {
-	if (a == NULL || b == NULL)
-	{
-		puts("Error");
-		exit(98);
-	}
-	if (a == 0 || b == 0)
-	{
-		puts("Error");
-		exit(100);
-	}
 	return (a % b);
 }
