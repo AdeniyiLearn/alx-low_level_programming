@@ -12,7 +12,7 @@ int op_add(int a, int b)
 	if (a == NULL || b == NULL)
 	{
 		puts("Error");
-		exit(98);;
+		exit(98);
 	}
 	return (a + b);
 }
