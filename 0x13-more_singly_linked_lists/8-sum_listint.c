@@ -12,7 +12,7 @@
 int sum_listint(listint_t *head)
 {
 	listint_t *temp;
-	unsigned int listDataSum = 0;
+	int listDataSum = 0;
 
 	if (head == NULL)
 	{
