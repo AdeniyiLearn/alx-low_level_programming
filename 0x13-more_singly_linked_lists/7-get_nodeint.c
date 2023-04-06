@@ -24,7 +24,7 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 		n_node++;
 	}
 
-	if (index => 0 && index <= n_node)
+	if (index > 0 && index <= n_node)
 	{
 		temp = head;
 
