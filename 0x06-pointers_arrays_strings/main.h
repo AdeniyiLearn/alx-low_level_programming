@@ -8,7 +8,7 @@ int _putchar(char c);
 int _strlen(char *s);
 char *_strcat(char *dest, char *src);
 char *_strncat(char *dest, char *src, int n);
-int main(void);
+gnt main(void);
 char *_strncpy(char *dest, char *src, int n);
 void print_buffer(char *b, int size);
 int _strcmp(char *s1, char *s2);
