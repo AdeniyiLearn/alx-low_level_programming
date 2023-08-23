@@ -16,7 +16,10 @@ size_t print_dlistint(const dlistint_t *h)
 	n_node = 0;
 
 	if (h == NULL || h == 0)
-		exit(1);
+	{
+		fprintf(stderr, "Error in list ");
+		exit(EXIT_FAILURE);
+	}
 	while (temp != NULL)
 	{
 		n_node += 1;
