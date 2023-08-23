@@ -14,7 +14,7 @@ void free_dlistint(dlistint_t *head)
 	temp = current = head;
 	if (head == NULL)
 	{
-		exit(EXIT_FAILURE);
+		exit(0);
 	}
 
 	while (temp->next != NULL)
