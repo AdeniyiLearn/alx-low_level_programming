@@ -12,7 +12,7 @@
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int fd;
-        char *buff;
+	char *buff;
 	ssize_t bytes_read;
 
 	buff = malloc(sizeof(char) * letters);
@@ -22,25 +22,23 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	}
 
-        fd = open(filename, O_RDWR);
+	fd = open(filename, O_RDWR);
 
-        if (fd < 0 || filename == NULL)
-        {
-                perror("Error opening file");
-                return 0;
-        }
+	if (fd < 0 || filename == NULL)
+	{
+		perror("Error opening file");
+		return (0);
+	}
 
-        bytes_read = read(fd, buff, letters);
-        printf("Read from my file: %s\n", buff);
+	bytes_read = read(fd, buff, letters);
+	printf("Read from my file: %s\n", buff);
 
-        if (bytes_read == -1)
-        {
-                perror("Error opening File");
-                return (1);
-        }
+	if (bytes_read == -1)
+	{
+		perror("Error opening File");
+		return (1);
+	}
 
-        close(fd);
-
-        return (bytes_read);
-
+	close(fd);
+	return (bytes_read);
 }
