@@ -31,7 +31,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	}
 
 	bytes_read = read(fd, buff, letters);
-	printf("Read from my file: %s\n", buff);
+	printf("%s\n", buff);
 
 	if (bytes_read == -1)
 	{
