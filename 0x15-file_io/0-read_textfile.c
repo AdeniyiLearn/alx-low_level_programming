@@ -17,28 +17,30 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	buff = malloc(sizeof(char) * letters);
 
-	if (buff == NULL)
+	if (filename == NULL || buff == NULL)
 	{
 		return (0);
 	}
 
 	fd = open(filename, O_RDWR);
 
-	if (fd < 0 || filename == NULL)
+	if (fd == -1)
 	{
-		perror("Error opening file");
+		close(fd);
 		return (0);
 	}
 
 	bytes_read = read(fd, buff, letters);
-	printf("%s", buff);
 
 	if (bytes_read == -1)
 	{
-		perror("Error opening File");
 		return (1);
 	}
-
+	buff[bytes_read] = '\0';
 	close(fd);
+
+	bytes_read = write(STDOUT_FILENO, buff, bytes_read);
+
+	free(buff);
 	return (bytes_read);
 }
