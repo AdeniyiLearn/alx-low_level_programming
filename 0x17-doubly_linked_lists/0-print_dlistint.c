@@ -9,22 +9,15 @@
 
 size_t print_dlistint(const dlistint_t *h)
 {
-	const dlistint_t *temp;
 	size_t n_node;
 
-	temp = h;
 	n_node = 0;
 
-	if (h == NULL || h == 0)
-	{
-		fprintf(stderr, "Error in list\n");
-		return (n_node);
-	}
-	while (temp != NULL)
+	while (h != NULL)
 	{
 		n_node += 1;
-		printf("%d\n", temp->n);
-		temp = temp->next;
+		printf("%d\n", h->n);
+		h = h->next;
 	}
 	return (n_node);
 }
