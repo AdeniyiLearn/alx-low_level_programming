@@ -30,16 +30,16 @@ hash_node_t *hash_item(char *key, char *value)
 
 hash_table_t *hash_table_create(unsigned long int size)
 {
-	hash_table_t* table = (hash_table_t *) malloc(sizeof(hash_table_t));
+	hash_table_t *table = (hash_table_t *) malloc(sizeof(hash_table_t));
 
 	if (table == NULL)
 	{
 		printf("table malloc failed");
-		return NULL;
+		return (NULL);
 	}
 	table->size = size;
-	table->array = (hash_node_t **) calloc(table->size, sizeof(hash_node_t*));
-	
+	table->array = (hash_node_t **) calloc(table->size, sizeof(hash_node_t *));
+
 	if (table->array == NULL)
 	{
 		printf("table->array calloc failed");
